@@ -26,11 +26,10 @@ class Solution
     //Function to find minimum number of pages.
     int findPages(int arr[], int n, int m) 
     {
-        int sum = 0;
         if(n < m){
             return -1;
         }
-        int mx = INT_MIN;
+        int sum = 0, mx = INT_MIN;
         for (int i = 0; i < n; i++) {
             sum += arr[i];
             mx = max(mx, arr[i]);
